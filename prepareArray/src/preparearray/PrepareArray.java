@@ -34,6 +34,8 @@ public class PrepareArray {
         s = s.replace("[", "");
         s = s.replace("]", "");
         s = s.replaceAll(",", "");
+        
+        s = s.replaceAll("[a-zAZ]", "");
        
         FileWriter writer = new FileWriter("datos.txt");
         writer.write(s);
